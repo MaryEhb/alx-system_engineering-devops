@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#kill beyond infinite proccess
+
+kill "$(ps -x | pgrep -f beyond)"
