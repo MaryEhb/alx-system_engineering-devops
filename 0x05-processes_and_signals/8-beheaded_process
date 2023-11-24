@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# kill process containing highlander word
+pkill -9 -f highlander
