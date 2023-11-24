@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# a Bash script that displays the PID, containing bash (ps is not allowed)
+
+pgrep -l bash
