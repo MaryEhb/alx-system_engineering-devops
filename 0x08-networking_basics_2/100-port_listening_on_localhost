@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# listen to port 
+# telnet localhost 98 in another terminal
+
+nc -l 98
