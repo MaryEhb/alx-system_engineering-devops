@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# get all listening ports with PID and prog name
+netstat -lp
