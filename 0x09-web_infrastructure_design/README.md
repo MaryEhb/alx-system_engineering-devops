@@ -105,6 +105,8 @@ This repository outlines a two-server web infrastructure for www.foobar.com with
   - Purpose: Enables HTTPS to encrypt traffic during transmission, protecting it from eavesdropping and ensuring the integrity of the communication.
 - **Monitoring Clients:**
   - Purpose: Installed to collect and analyze data for improved system health monitoring.
+  - How the monitoring tool is collecting data: Monitoring tools collect data through various methods, including Metrics, Logs, Traces and Alerts.
+  - what to do if you want to monitor your web server QPS: Monitor Incoming Requests by using monitoring tools to track the number of queries per second (QPS) on the web servers and Identify Trends to Analyze it and set alerts for abnormal increases in QPS, indicating potential issues.
 
 ### Issues
 1. **SSL Termination at Load Balancer:** Termination at the load balancer exposes decrypted traffic within the internal network, posing a security risk. Solution: Implement end-to-end encryption by terminating SSL at the web servers.
