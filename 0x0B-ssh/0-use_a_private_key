@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# 1. Create an SSH key pair
+# to add the key path in the command we add -i then the path
+# otherwise the ssh key will be thought that it is in ~/.ssh folder
+
+ssh -i ~/.ssh/school ubuntu@34.224.62.130 
