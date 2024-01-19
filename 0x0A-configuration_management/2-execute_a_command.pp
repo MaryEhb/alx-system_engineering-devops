@@ -3,5 +3,4 @@
 exec { 'killmenow_process':
   command     => 'pkill killmenow',
   provider    => 'shell',
-  refreshonly => true,
 }
