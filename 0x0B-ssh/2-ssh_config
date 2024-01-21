@@ -1,0 +1,10 @@
+# 2. Client configuration file
+
+Include /etc/ssh/ssh_config.d/*.conf
+
+Host *
+    SendEnv LANG LC_*
+    HashKnownHosts yes
+    GSSAPIAuthentication yes
+    PasswordAuthentication no
+    IdentityFile ~/.ssh/school
