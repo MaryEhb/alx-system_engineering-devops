@@ -6,7 +6,6 @@ file_line { 'disable_password_auth':
   ensure => present,
   path   => '/etc/ssh/sshd_config',
   line   => '    PasswordAuthentication no',
-  match  => '^#?    PasswordAuthentication',
 }
 
 # SSH client configuration must be configured to use the
