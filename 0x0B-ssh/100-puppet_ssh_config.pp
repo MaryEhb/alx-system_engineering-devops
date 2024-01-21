@@ -5,7 +5,8 @@
 file_line { 'disable_password_auth':
   ensure => 'present',
   path   => '/etc/ssh/sshd_config',
-  line   => '    PasswordAuthentication no',
+  line   => 'PasswordAuthentication no',
+  match  => '^#?PasswordAuthentication',
 }
 
 # SSH client configuration must be configured to use the
@@ -13,5 +14,6 @@ file_line { 'disable_password_auth':
 file_line { 'use_school_private_key':
   ensure => 'present',
   path   => '/etc/ssh/sshd_config',
-  line   => '    IdentityFile ~/.ssh/school',
+  line   => 'IdentityFile ~/.ssh/school',
+  match  => '^#?IdentityFile',
 }
