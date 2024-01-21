@@ -4,7 +4,7 @@
 # Disable PasswordAuthentication in sshd_config
 file_line { 'disable_password_auth':
   ensure => 'present',
-  path   => '/etc/ssh/sshd_config',
+  path   => '/etc/ssh/ssh_config',
   line   => 'PasswordAuthentication no',
   match  => '^#?PasswordAuthentication',
 }
@@ -13,7 +13,7 @@ file_line { 'disable_password_auth':
 # private key ~/.ssh/school
 file_line { 'use_school_private_key':
   ensure => 'present',
-  path   => '/etc/ssh/sshd_config',
+  path   => '/etc/ssh/ssh_config',
   line   => 'IdentityFile ~/.ssh/school',
   match  => '^#?IdentityFile',
 }
