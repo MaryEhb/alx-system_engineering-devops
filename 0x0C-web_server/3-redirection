@@ -7,10 +7,10 @@ echo "Hello World!" > /var/www/html/index.html
 sudo service nginx restart
 
 # 2. Configure redirection for /redirect_me
-sudo sed -i -e '/server_name localhost;/a
-    location /redirect_me {
-        return 301 https://github.com/MaryEhb;
-    }' /etc/nginx/sites-available/default
+sudo sed -i -e "/server_name localhost;/a \
+    location /redirect_me { \
+        return 301 https://github.com/MaryEhb; \
+    }" /etc/nginx/sites-available/default
 
 # 3. Test nginx configuration and restart
 sudo nginx -t
