@@ -23,6 +23,6 @@ echo "server {
 
 echo "Ceci n'est pas une page" > /var/www/html/404.html
 
-sudo sed -i "/^http {/a \        add_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf
+sudo sed -i "/^http {/a \        add_header X-Served-By \"$HOSTNAME\";/" /etc/nginx/nginx.conf
 
 sudo nginx -s reload
