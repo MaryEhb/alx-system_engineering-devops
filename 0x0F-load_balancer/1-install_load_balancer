@@ -16,7 +16,7 @@ backend web_servers
     mode http
     balance roundrobin
     server 339431-web-01 34.224.62.130:80 check
-    server 339431-web-02 52.91.151.52 check
+    server 339431-web-02 3.94.213.33 check
 " | sudo tee -a /etc/haproxy/haproxy.cfg
 
 sudo service haproxy start
