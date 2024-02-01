@@ -2,7 +2,7 @@
 #0. Nginx likes port 80
 
 #force rmoving if found 
-sudo rm -fp /etc/nginx/sites-enabled/default
+sudo rm -f /etc/nginx/sites-enabled/default
 #create a symbolic link from available  to enabled
 sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx restart
