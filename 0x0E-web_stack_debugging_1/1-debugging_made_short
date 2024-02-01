@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #1. Make it sweet and short
 #its already short why to change it?
-
+#??????????????
 sudo rm -f /etc/nginx/sites-enabled/default
 sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx restart
