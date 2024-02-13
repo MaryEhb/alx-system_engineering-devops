@@ -1,6 +1,7 @@
 #!/bin/env bash
 # 1. Run Nginx as Nginx
 
+chmod 644 /etc/nginx/nginx.conf
 pkill apache2
 
 # Change nginx user in nginx.conf
