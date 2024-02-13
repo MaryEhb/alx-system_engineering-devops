@@ -1,6 +1,8 @@
 #!/bin/env bash
 # 1. Run Nginx as Nginx
 
+chmod 644 /etc/nginx/nginx.conf
+
 # Change nginx user in nginx.conf
 sed -i 's/#user www-data/user nginx/' /etc/nginx/nginx.conf
 
