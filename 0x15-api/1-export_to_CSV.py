@@ -17,7 +17,7 @@ if __name__ == '__main__':
         with open("{}.csv".format(user.get('id')), 'w', newline='') as file:
             writer = csv.writer(file)
             for todo in res:
-                writer.writerow([(todo.get('userId')),
-                                 user.get('name'),
-                                 todo.get('completed'),
-                                 todo.get('title')])
+                writer.writerow(['"{}"'.format(todo.get('userId')),
+                                  '"{}"'.format(user.get('name')),
+                                  '"{}"'.format(todo.get('completed')),
+                                  '"{}"'.format(todo.get('title'))])
