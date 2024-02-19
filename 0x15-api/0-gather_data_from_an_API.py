@@ -11,9 +11,9 @@ if __name__ == '__main__':
         urlUSER = 'https://jsonplaceholder.typicode.com/users?id='
         res = requests.get(urlTODO + sys.argv[1]).json()
         user = requests.get(urlUSER + sys.argv[1]).json()[0]
-        completed = [obj for obj in res if obj['completed']]
-        print('Employee {} is done with tasks({}/{}):'.format(user['name'],
+        completed = [obj for obj in res if obj.get('completed')]
+        print('Employee {} is done with tasks({}/{}):'.format(user.get('name'),
                                                               len(completed),
                                                               len(res)))
         for todo in completed:
-            print("\t{}".format(todo['title']))
+            print("\t{}".format(todo.get('title')))
