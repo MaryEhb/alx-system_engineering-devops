@@ -16,4 +16,4 @@ if __name__ == '__main__':
                                                               len(completed),
                                                               len(res)))
         for todo in completed:
-            print("\t{}".format(todo.get('title')))
+            print("\t {}"i.format(todo.get('title')))
