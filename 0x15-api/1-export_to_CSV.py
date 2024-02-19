@@ -19,6 +19,6 @@ if __name__ == '__main__':
             writer.writerow(['userId', 'userName', 'completed', 'title'])
             for todo in res:
                 writer.writerow([todo.get('userId'),
-                                 user.get('name'),
+                                 user.get('username'),
                                  todo.get('completed'),
                                  todo.get('title')])
