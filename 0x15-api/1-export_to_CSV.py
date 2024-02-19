@@ -15,10 +15,10 @@ if __name__ == '__main__':
         completed = [obj for obj in res if obj.get('completed')]
 
         with open("{}.csv".format(user.get('id')), 'w', newline='') as file:
-            writer = csv.writer(file)
+            writer = csv.writer(file, quoting=csv.QUOTE_ALL)
             writer.writerow(['userId', 'userName', 'completed', 'title'])
             for todo in res:
-                writer.writerow(['"{}"'.format(todo.get('userId')),
-                                 str(user.get('name')),
-                                 "'{}'".format(todo.get('completed')),
-                                 '\"{}\"'.format(todo.get('title'))])
+                writer.writerow([todo.get('userId'),
+                                 user.get('name'),
+                                 todo.get('completed'),
+                                 todo.get('title')])
