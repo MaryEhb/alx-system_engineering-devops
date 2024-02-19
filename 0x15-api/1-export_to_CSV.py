@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
         with open("{}.csv".format(user.get('id')), 'w', newline='') as file:
             writer = csv.writer(file, quoting=csv.QUOTE_ALL)
-            writer.writerow(['userId', 'userName', 'completed', 'title'])
+            #writer.writerow(['userId', 'userName', 'completed', 'title'])
             for todo in res:
                 writer.writerow([todo.get('userId'),
                                  user.get('username'),
