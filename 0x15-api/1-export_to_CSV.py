@@ -18,6 +18,6 @@ if __name__ == '__main__':
             writer = csv.writer(file)
             for todo in res:
                 writer.writerow(['"{}"'.format(todo.get('userId')),
-                                  '"{}"'.format(user.get('name')),
-                                  '"{}"'.format(todo.get('completed')),
-                                  '"{}"'.format(todo.get('title'))])
+                                 '"{}"'.format(user.get('name')),
+                                 '"{}"'.format(todo.get('completed')),
+                                 '"{}"'.format(todo.get('title'))])
