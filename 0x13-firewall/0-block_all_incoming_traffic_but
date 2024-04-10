@@ -8,7 +8,7 @@ sudo ufw disable -y
 sudo ufw reset -y
 
 sudo ufw default deny incoming
-sudo ufw default allow ongoing
+sudo ufw default allow outgoing
 
 sudo ufw allow 22
 sudo ufw allow 443
